@@ -18,7 +18,7 @@ class HomeAppBar extends StatelessWidget {
               left: 20,
             ),
             child: Text(
-              "Jeffrey Shop",
+              "COESA",
               style: TextStyle(
                 fontSize: 23,
                 fontWeight: FontWeight.bold,
