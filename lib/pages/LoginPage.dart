@@ -12,15 +12,18 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
-      height: double.infinity,
-      decoration: const BoxDecoration(
-        image: DecorationImage(
-          fit: BoxFit.cover,
-          image: NetworkImage(
-              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyLG3eokn_QvY8CzpBMBb9mWBJTAmu05Pa1A&usqp=CAU'),
-        ),
-      ),
+      color: Colors.white,
+      padding: EdgeInsets.all(25),
+
+      // width: double.infinity,
+      // height: double.infinity,
+      // decoration: const BoxDecoration(
+      //   image: DecorationImage(
+      //     fit: BoxFit.cover,
+      //     image: NetworkImage(
+      //         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyLG3eokn_QvY8CzpBMBb9mWBJTAmu05Pa1A&usqp=CAU'),
+      //   ),
+      // ),
       child: Container(
         child: Scaffold(
           body: SingleChildScrollView(
@@ -28,11 +31,11 @@ class _LoginPageState extends State<LoginPage> {
                 child: Column(
               children: [
                 Padding(
-                  padding: EdgeInsets.symmetric(vertical: 30, horizontal: 70),
-                  child: Image.asset("image/img.png"),
+                  padding: EdgeInsets.symmetric(vertical: 80, horizontal: 70),
+                  child: Image.asset("image/img_4.png"),
                 ),
                 Container(
-                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  //   margin: EdgeInsets.symmetric(horizontal: 20),
                   padding: EdgeInsets.symmetric(horizontal: 15),
                   height: 55,
                   decoration: BoxDecoration(
@@ -51,7 +54,7 @@ class _LoginPageState extends State<LoginPage> {
                       Icon(
                         Icons.person,
                         size: 27,
-                        color: Color(0xFF4C53A5),
+                        color: Color(0xFF00695C),
                       ),
                       SizedBox(width: 10),
                       Container(
@@ -60,7 +63,7 @@ class _LoginPageState extends State<LoginPage> {
                         child: TextFormField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: "Student No.",
+                            hintText: "Username",
                           ),
                         ),
                       ),
@@ -69,8 +72,8 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 SizedBox(height: 20),
                 Container(
-                  margin: EdgeInsets.symmetric(horizontal: 20),
-                  padding: EdgeInsets.symmetric(horizontal: 15),
+                  // margin: EdgeInsets.symmetric(horizontal: 20),
+                  padding: EdgeInsets.only(left: 10, right: 10),
                   height: 55,
                   decoration: BoxDecoration(
                     color: Color(0xFFF5F9FD),
@@ -88,7 +91,7 @@ class _LoginPageState extends State<LoginPage> {
                       Icon(
                         Icons.lock,
                         size: 27,
-                        color: Color(0xFF4C53A5),
+                        color: Color(0xFF00695C),
                       ),
                       SizedBox(width: 10),
                       Container(
@@ -107,7 +110,10 @@ class _LoginPageState extends State<LoginPage> {
                                   _isHiddenPassword = !_isHiddenPassword;
                                 });
                               },
-                              child: Icon(Icons.visibility),
+                              child: Icon(
+                                Icons.visibility,
+                                color: Color(0xFF00695C),
+                              ),
                             ),
                           ),
                         ),
@@ -124,9 +130,9 @@ class _LoginPageState extends State<LoginPage> {
                     child: Text(
                       "Forgot Password?",
                       style: TextStyle(
-                        color: Color(0xFF1A237E),
+                        color: Color(0xFF00695C),
                         fontSize: 14,
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
                   ),
@@ -146,7 +152,7 @@ class _LoginPageState extends State<LoginPage> {
                       gradient: LinearGradient(
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
-                        colors: [Color(0xFF1A237E), Color(0xFF4C53A5)],
+                        colors: [Color(0xFF004D40), Color(0xFF009658)],
                       ),
                       color: Color(0xFF4C53A5),
                       borderRadius: BorderRadius.circular(50),
@@ -175,7 +181,7 @@ class _LoginPageState extends State<LoginPage> {
                     Text(
                       "Don't Have an Account? - ",
                       style: TextStyle(
-                          color: Color(0xFF4C53A5),
+                          color: Color(0xFF00695C),
                           fontSize: 16,
                           fontWeight: FontWeight.w400),
                     ),
@@ -184,7 +190,7 @@ class _LoginPageState extends State<LoginPage> {
                       child: Text(
                         "Sign Up",
                         style: TextStyle(
-                          color: Colors.blue,
+                          color: Color(0xFF00695C),
                           fontWeight: FontWeight.w500,
                           fontSize: 19,
                         ),
@@ -199,11 +205,11 @@ class _LoginPageState extends State<LoginPage> {
                     TextButton(
                       onPressed: () {},
                       child: Text(
-                        "or Sign Up with",
+                        "Need Help?",
                         style: TextStyle(
-                          color: Colors.blue,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 14,
+                          color: Color(0xFF00695C),
+                          fontWeight: FontWeight.w600,
+                          fontSize: 16,
                         ),
                       ),
                     )

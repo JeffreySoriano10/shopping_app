@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app/pages/CartPage.dart';
-import 'package:shopping_app/pages/FrontPage.dart';
 import 'package:shopping_app/pages/Homepage.dart';
 import 'package:shopping_app/pages/ItemPage.dart';
 import 'package:shopping_app/pages/LoginPage.dart';
+import 'package:shopping_app/pages/Splashscreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
       ),
       routes: {
-        "/": (context) => frontpage(),
+        "/": (context) => SplashScreen(),
         "loginPage": (context) => LoginPage(),
         "homePage": (context) => HomePage(),
         "cartPage": (context) => CartPage(),
