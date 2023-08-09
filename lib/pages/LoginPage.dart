@@ -31,12 +31,12 @@ class _LoginPageState extends State<LoginPage> {
                 child: Column(
               children: [
                 Padding(
-                  padding: EdgeInsets.symmetric(vertical: 80, horizontal: 70),
-                  child: Image.asset("image/img_4.png"),
+                  padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                  child: Image.asset("image/konek.png"),
                 ),
                 Container(
                   //   margin: EdgeInsets.symmetric(horizontal: 20),
-                  padding: EdgeInsets.symmetric(horizontal: 15),
+                  padding: EdgeInsets.symmetric(horizontal: 10),
                   height: 55,
                   decoration: BoxDecoration(
                     color: Color(0xFFF5F9FD),
@@ -198,23 +198,24 @@ class _LoginPageState extends State<LoginPage> {
                     )
                   ],
                 ),
-                SizedBox(height: 5),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        "Need Help?",
+                SizedBox(height: 40),
+                  Text(
+                        "CARD Bank Inc.",
                         style: TextStyle(
-                          color: Color(0xFF00695C),
-                          fontWeight: FontWeight.w600,
-                          fontSize: 16,
+                          color: Colors.black87,
+                          fontWeight: FontWeight.normal,
+                          fontSize: 12,
                         ),
                       ),
-                    )
-                  ],
-                )
+                Text(
+                  "Version 1.0.0",
+                  style: TextStyle(
+                    color: Colors.black87,
+                    fontWeight: FontWeight.normal,
+                    fontSize: 12,
+                  ),
+                ),
+
               ],
             )),
           ),

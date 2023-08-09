@@ -95,7 +95,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.transparent,
           onTap: (index) {},
           height: 70,
-          color: Color(0xFF4C53A5),
+          color: Color(0xFF004D40),
           items: [
             CurvedNavigationBarItem(
               child: Icon(
@@ -111,16 +111,17 @@ class HomePage extends StatelessWidget {
                 size: 30,
                 color: Colors.white,
               ),
-              label: 'Search',
+              label: 'Cart',
             ),
             CurvedNavigationBarItem(
               child: Icon(
-                Icons.list,
+                Icons.notifications,
                 size: 30,
                 color: Colors.white,
               ),
-              label: 'Chat',
+              label: 'Notification',
             ),
+
 
           ]),
     );

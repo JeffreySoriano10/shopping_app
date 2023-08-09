@@ -15,7 +15,7 @@ class _SplashScreen extends State<SplashScreen>
   void initState() {
     super.initState();
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
           builder: (_SplashScreen) => LoginPage(),
@@ -43,21 +43,12 @@ class _SplashScreen extends State<SplashScreen>
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Icon(
-              Icons.abc,
-              size: 80,
-              color: Colors.white,
+          children:  [
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 90, horizontal: 90),
+              child: Image.asset("image/kwhite.png"),
             ),
-            SizedBox(height: 20),
-            Text(
-              "E-TRACK",
-              style: TextStyle(
-                  fontSize: 30,
-                  fontStyle: FontStyle.italic,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white),
-            ),
+
           ],
         ),
       ),
